@@ -1,14 +1,16 @@
 <template>
-    <p v-bind:class="{'danger' : hasError}" >El mensaje se ha enviado satisfactoriamente</p>
+    <p v-bind:style="{
+    backgroundColor: '#ccc', color: color}" >El mensaje se ha enviado satisfactoriamente</p>
+    <button v-on:click="handclick">Cambiar color</button>
 
 </template>
 
 <script setup>
-        let hasError = true;
+    import { ref } from "vue";
+        let color =ref('#fff')
+        const handclick = () => {color.value = '#ff0000'}
 </script>
 
 <style scoped>
-.danger{
-    color: red;
-}
+
 </style>

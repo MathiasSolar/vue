@@ -9,6 +9,7 @@
   <ExampleSelective/>
   <ExampleFor/>
   <ClassBind/>
+  <ModelForm/>
 </template>
 
 
@@ -19,6 +20,7 @@ import CounterComposition from './components/CounterComposition.vue';
 import ExampleSelective from './components/ExampleSelective.vue';
 import ExampleFor from './components/ExampleFor.vue';
 import ClassBind from './components/ClassBind.vue';
+import ModelForm from './components/ModelForm.vue';
 </script>
 
 <style>
